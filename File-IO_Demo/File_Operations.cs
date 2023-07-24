@@ -21,6 +21,16 @@ namespace File_IO_Demo
                 Console.WriteLine("File not exists");
             }
         }
-       
+        public void ReadAll_Line()
+        {
+            //ReadAllLines-Used to open a text file then it will read all the lines in to a
+            ////string array and then close the file.
+            string[] lines = File.ReadAllLines(path);
+            foreach (string line in lines)
+            {
+                Console.WriteLine(line);
+            }
+        }
+
     }
 }
