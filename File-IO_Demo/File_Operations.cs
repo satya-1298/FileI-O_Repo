@@ -56,5 +56,17 @@ namespace File_IO_Demo
             File.Delete(copyPath);
             Console.WriteLine("File Deleted");
         }
+        public void ReadFrom_StreamReader()
+        {
+            //Stream Reader class is used to read string from a stream in a specified encoding
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string str = " ";
+                while ((str = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(str);
+                }
+            }
+        }
     }
 }
