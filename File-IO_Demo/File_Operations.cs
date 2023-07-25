@@ -50,5 +50,11 @@ namespace File_IO_Demo
             Console.WriteLine("File is copied");
 
         }
+        public void Delete_File()
+        {
+            string copyPath = @"C:\Users\PC\Desktop\RFP288\FileI-O_Repo\File-IO_Demo\File\Sai.txt";
+            File.Delete(copyPath);
+            Console.WriteLine("File Deleted");
+        }
     }
 }

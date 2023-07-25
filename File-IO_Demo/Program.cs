@@ -19,6 +19,7 @@ namespace File_IO_Demo
                 Console.WriteLine("2-Read all the lines from File");
                 Console.WriteLine("3-Read all the text");
                 Console.WriteLine("4-Copy file");
+                Console.WriteLine("5-Delete a file");
                 Console.WriteLine("-----------------------------------------");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -38,6 +39,10 @@ namespace File_IO_Demo
                     case 4:
                         file_Operations.Copy_File();
                         Console.WriteLine("------------------------------------------");
+                        break;
+                    case 5:
+                        file_Operations.Delete_File();
+                        Console.WriteLine("--------------------------------------");
                         break;
 
                 }
