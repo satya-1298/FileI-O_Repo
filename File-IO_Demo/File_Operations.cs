@@ -43,6 +43,12 @@ namespace File_IO_Demo
                 Console.WriteLine(lines);
             }
         }
-       
+        public void Copy_File()
+        {
+            string copyPath = @"C:\Users\PC\Desktop\RFP288\FileI-O_Repo\File-IO_Demo\File\Sai.txt";
+            File.Copy(path, copyPath);
+            Console.WriteLine("File is copied");
+
+        }
     }
 }
