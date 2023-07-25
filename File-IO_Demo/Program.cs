@@ -17,6 +17,8 @@ namespace File_IO_Demo
                 Console.WriteLine("-----------------------------------------");
                 Console.WriteLine("1-Check File Exists");
                 Console.WriteLine("2-Read all the lines from File");
+                Console.WriteLine("3-Read all the text");
+               
                 Console.WriteLine("-----------------------------------------");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -29,6 +31,11 @@ namespace File_IO_Demo
                         file_Operations.ReadAll_Line();
                         Console.WriteLine("-----------------------------------------");
                         break;
+                    case 3:
+                        file_Operations.ReadAll_Text();
+                        Console.WriteLine("------------------------------------------");
+                        break;
+                   
                     
                 }
             }

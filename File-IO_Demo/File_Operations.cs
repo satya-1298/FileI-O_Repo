@@ -26,11 +26,23 @@ namespace File_IO_Demo
             //ReadAllLines-Used to open a text file then it will read all the lines in to a
             ////string array and then close the file.
             string[] lines = File.ReadAllLines(path);
+            {
+                Console.WriteLine(lines[0]); //Read only the indexed line
+                Console.WriteLine("-----------------------------------------------");
+            }
             foreach (string line in lines)
             {
                 Console.WriteLine(line);
             }
         }
-
+        public void ReadAll_Text()
+        {
+            //ReadAllText- used to open text file then it will read all the lines at a time with out help of array
+            string lines=File.ReadAllText(path);
+            {
+                Console.WriteLine(lines);
+            }
+        }
+       
     }
 }
