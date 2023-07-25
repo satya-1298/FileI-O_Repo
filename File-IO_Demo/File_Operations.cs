@@ -68,5 +68,14 @@ namespace File_IO_Demo
                 }
             }
         }
+        public void WriteFrom_StreamWriter()
+        {
+            using (StreamWriter sw = File.AppendText(path))
+            {
+                sw.WriteLine("Welcome");
+                sw.Close();
+                Console.WriteLine(File.ReadAllText(path));
+            }
+        }
     }
 }

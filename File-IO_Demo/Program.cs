@@ -20,7 +20,8 @@ namespace File_IO_Demo
                 Console.WriteLine("3-Read all the text");
                 Console.WriteLine("4-Copy file");
                 Console.WriteLine("5-Delete a file");
-                Console.WriteLine("6-Read from Stream");
+                Console.WriteLine("6-Read using Stream Reader");
+                Console.WriteLine("7-Write using Stream Writer");
                 Console.WriteLine("-----------------------------------------");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -48,6 +49,10 @@ namespace File_IO_Demo
                     case 6:
                         file_Operations.ReadFrom_StreamReader();
                         Console.WriteLine("----------------------------------");
+                        break;
+                    case 7:
+                        file_Operations.WriteFrom_StreamWriter();
+                        Console.WriteLine("------------------------------------");
                         break;
 
                 }
